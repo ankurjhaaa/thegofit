@@ -32,13 +32,15 @@
 
 
         }
-        .sidebar-link .right-icon{
+
+        .sidebar-link .right-icon {
             transition: all 0.5s;
         }
 
-        .sidebar-link[aria-expanded="true"] .right-icon{
+        .sidebar-link[aria-expanded="true"] .right-icon {
             transform: rotate(180deg);
         }
+
         @media (min-width: 992px) {
             .offcanvas-backdrop {
                 display: none !important;
@@ -53,10 +55,68 @@
                 top: var(--topnavbarheight) !important;
 
             }
-            main{
+
+            main {
                 margin-left: var(--ofcanvas-width);
 
             }
+        }
+
+        /* Container for buttons */
+        .d-flex.align-items-center {
+            gap: 8px;
+            /* Space between buttons */
+        }
+
+        /* General button styling */
+        .action-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            /* For the edit link */
+        }
+
+        /* Edit button */
+        .edit {
+            background-color: #4CAF50;
+            /* Green background */
+            color: white;
+        }
+
+        .edit:hover {
+            background-color: #45a049;
+            /* Darker green on hover */
+        }
+
+        /* Delete button */
+        .delete {
+            background-color: #f44336;
+            /* Red background */
+            color: white;
+        }
+
+        .delete:hover {
+            background-color: #da190b;
+            /* Darker red on hover */
+        }
+
+        /* Icon styling */
+        .action-btn i {
+            font-size: 16px;
+        }
+
+        /* Remove default form styling */
+        form.m-0.p-0 {
+            margin: 0;
+            padding: 0;
+            display: inline;
         }
     </style>
 </head>
@@ -65,10 +125,10 @@
     <!-- top nev bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
         <div class="container-fluid">
-           <!-- off canvas toggle start -->
-            <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                aria-controls="offcanvasExample">
-                 <span class="navbar-toggler-icon"></span>
+            <!-- off canvas toggle start -->
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <!-- off canvas toggle start -->
             <a class="navbar-brand text-uppercase fw-bold me-auto" href="#">Go Fit | Admin Panel</a>

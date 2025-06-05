@@ -10,7 +10,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"> <i class="fa-solid fa-gauge"></i> Dashboard</a>
+                    <a class="nav-link active" aria-current="page" href="{{ route('admini.dashboard') }}"> <i class="fa-solid fa-gauge"></i> Dashboard</a>
                 </li>
                 <li class="nav-item my-0">
                     <hr>
@@ -28,10 +28,10 @@
                     <div class="collapse" id="catmgmt">
                         <ul class="navbar-nav ps-3">
                             <li>
-                                <a href="" class="nav-link"><i class="fa-solid fa-plus me-2"></i> Add New</a>
+                                <a href="{{ route('categories.create') }}" class="nav-link"><i class="fa-solid fa-plus me-2"></i> Add New</a>
                             </li>
                             <li>
-                                <a href="" class="nav-link"><i class="fa-solid fa-list-check me-2"></i> Manage All</a>
+                                <a href="{{ route('categories.index') }}" class="nav-link"><i class="fa-solid fa-list-check me-2"></i> Manage All</a>
                             </li>
                         </ul>
                     </div>
